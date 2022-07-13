@@ -85,6 +85,7 @@ const uploadFile = ()=>{
     
     xhr.upload.onprogress = updateProgress;
 
+
     xhr.upload.onerror = function () {
         showToast(`Error in upload : ${xhr.status}`);
         fileInput.value= "";
@@ -92,7 +93,7 @@ const uploadFile = ()=>{
 
     xhr.onreadystatechange = function() {
         if(xhr.readyState == XMLHttpRequest.DONE){
-            console.log(xhr.response);
+            console.log(xhr.responseText);
             showLink(xhr.responseText);
         }
     };
@@ -116,7 +117,7 @@ const resetFileInput = () =>{
 }
 
 const showLink = (res)=>{
-    fileInput= "";
+    // fileInput= "";
     const {file : url} = JSON.parse(res);
     console.log(url);
     progressContainer.style.display = "none";
