@@ -18,9 +18,9 @@ const toast = document.querySelector(".toast");
 
 // const APP_BASE_URL = "http://localhost:3000";
 const APP_BASE_URL = "pawan-metashare.herokuapp.com"
-// const host = APP_BASE_URL;
-// const uploadURL = `${host}/api/files`;
-const uploadURL = `/api/files`;
+const host = APP_BASE_URL;
+const uploadURL = `${host}/api/files`;
+// const uploadURL = `/api/files`;
 
 const maxAllowedSize = 100 * 1024 * 1024;
 
