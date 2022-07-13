@@ -81,6 +81,8 @@ const uploadFile = ()=>{
 
     const xhr = new XMLHttpRequest();
 
+    console.log("pawan");
+    
     xhr.upload.onprogress = updateProgress;
 
     xhr.upload.onerror = function () {
@@ -114,6 +116,7 @@ const resetFileInput = () =>{
 }
 
 const showLink = (res)=>{
+    fileInput= "";
     const {file : url} = JSON.parse(res);
     console.log(url);
     progressContainer.style.display = "none";
