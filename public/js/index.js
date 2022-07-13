@@ -91,7 +91,7 @@ const uploadFile = ()=>{
     xhr.onreadystatechange = () =>{
         if(xhr.readyState == XMLHttpRequest.DONE){
             console.log(xhr.response);
-            showLink(JSON.parse(xhr.response));
+            showLink(JSON.parse(xhr.responseText));
         }
     };
 
