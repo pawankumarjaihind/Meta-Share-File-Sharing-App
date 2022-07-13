@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | MetaShare - File Sharing </title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+
+    <section class="upload-container">
+        <div class="drop-zone">
+            <div class="icon-container">
+                <img src="img/file.svg" alt="file icon" class="center" draggable="false">
+            </div>
+            <input type="file" id="fileInput">
+            <div class="title">Drop Your File Here / <span class="browseBtn">Browse</span></div>
+        </div>
+        <div class="progress-container">
+            <div class="bg-progress">
+
+            </div>
+            <div class="inner-container">
+                <div class="title">Uploading</div>
+                <div class="percent-container"><span id="percent">0</span>%</div>
+                <div class="progress-bar"></div>
+            </div>
+    
+        </div>
+        <div class="sharing-container">
+            <div class="input-container"> 
+                <input type="text" id="fileURL" readonly>
+                <image src="img/copy-icon.svg" alt="copy-icon" id ="copyBtn"> 
+            </div>
+        </div>
+        <footer>
+            <p>Created by PAWAN KUMAR</p> 
+        </footer>
+        <div class="toast">Sample Message</div>
+    </section>
+    <script src="/js/index.js"></script>
+</body>
+</html>
